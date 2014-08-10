@@ -62,16 +62,6 @@ public class Triangle{
         }
 
         System.out.println("Max total is: " + maxNode.getTotal());
-        // LinkedList<Node> path = new LinkedList<Node>();
-        // while(maxNode!=null){
-        // 	path.push(maxNode);
-
-        // 	maxNode=maxNode.getPathParent();
-        // }
-        // while(!path.isEmpty()){
-        // 	maxNode=path.pop();
-        // 	System.out.print(maxNode.getValue() + " ");
-        // }
     }
 
     //attaches nodes to their children
@@ -98,7 +88,6 @@ public class Triangle{
 
     //creates 2d array list of nodes from triangle file
     //each inner arraylist is a row of the triangle
-
     private ArrayList<ArrayList<Node>> createListFromFile(BufferedReader in) throws IOException{
     	ArrayList<ArrayList<Node>> list = new ArrayList<ArrayList<Node>>();
     	ArrayList<Node> temp;
